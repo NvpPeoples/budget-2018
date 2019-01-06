@@ -7,10 +7,20 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use yii\web\View;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
+<?php if (YII_ENV_PROD) $this->registerJsFile("https://www.googletagmanager.com/gtag/js?id=UA-131798572-1", ['position' => View::POS_HEAD, 'async'=>true]);?>
+<?php if (YII_ENV_PROD) $this->registerJs($js_code=<<<'JS'
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131798572-1');
+JS
+, View::POS_END, 'google_analytics');?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">

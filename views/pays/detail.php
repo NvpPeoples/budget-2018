@@ -134,4 +134,8 @@ $this->params['breadcrumbs'][] = [
     </div>
 
     <div class="clearfix"></div>
+    <br/>
+    <?= Html::a('<i class="glyphicon glyphicon-link"></i> посилання транзакції на сайт spending.gov.ua', 'https://spending.gov.ua/spa/37567646/transactions/'.$model->id, [
+        'class' => 'btn btn-default'
+    ]);?>
 </div>
