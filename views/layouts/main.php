@@ -76,9 +76,9 @@ JS
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Створено ініціативною групою ГО СПІЛЬНО+ <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Створено ініціативною групою ГО СПІЛЬНО+ <?= date('Y') ?> рік</p>
 
-        <p class="pull-right">версія для ознайомлення</p>
+	<p class="pull-right">сирцевий код на <?= Html::a('github.com', 'https://github.com/NvpPeoples/budget-2018')?></p>
     </div>
 </footer>
 
