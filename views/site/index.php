@@ -5,7 +5,7 @@ use yii\bootstrap\ActiveForm;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Прозорі фінанси навчальних закладів';
+$this->title = 'Витрати новопільської сільської ради за 2018 рік';
 ?>
 <div class="site-index">
 
@@ -84,7 +84,7 @@ $this->title = 'Прозорі фінанси навчальних заклад�
                 <?endforeach?>
                 <tr>
                     <td class="text-right" colspan="3">
-                        <?= Html::a('всі напрямки витрат <i class="glyphicon glyphicon-chevron-right"></i>', ['/orgs'], [
+                        <?= Html::a('всі отримувачі коштів <i class="glyphicon glyphicon-chevron-right"></i>', ['/orgs'], [
                             'class' => 'btn btn-default'
                         ]);?>
                     </td>
