@@ -14,7 +14,7 @@ use miloschuman\highcharts\HighchartsAsset;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Напрямок витрат';
+$this->title = 'Напрямок витрат: '.$gtype->name;
 $this->params['breadcrumbs'][] = [
     'label' => 'Напрямок витрат',
     'url'   => ['index']

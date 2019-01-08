@@ -4,7 +4,12 @@ use yii\helpers\Html;
 use app\models\Orgs;
 use app\models\Kindergarten;
 
-$this->title = 'Всі платежі';
+$this->title = strtr('Платеж {num}, сума: {amount}, призначення – {text}', [
+    '{num}'    => $model->id,
+    '{amount}' => Yii::$app->formatter->asCurrency($model->amount),
+    '{text}'   => $model->payment_details
+]);
+
 $this->params['breadcrumbs'][] = [
     'label' => 'Платежі',
     'url'   => ['index']

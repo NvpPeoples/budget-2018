@@ -14,7 +14,7 @@ use miloschuman\highcharts\HighchartsAsset;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Організації';
+$this->title = 'Отримуваш коштів: '.$org->name;
 $this->params['breadcrumbs'][] = [
     'label' => 'Організації',
     'url'   => ['index']
