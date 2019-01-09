@@ -8,7 +8,7 @@ $config = [
     'bootstrap' => ['log'],
     'language'       => 'uk-UA',
     'sourceLanguage' => 'en',
-    'timeZone' => 'Europe/Kiev',    
+    'timeZone' => 'Europe/Kiev',
     'components' => [
         'i18n' => [
             'translations' => [
@@ -58,12 +58,6 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        'sphinx' => [
-            'class' => 'yii\sphinx\Connection',
-            'dsn' => 'mysql:host=91.237.121.249;port=9306;',
-            'username' => '',
-            'password' => '',
-        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
